@@ -25,7 +25,6 @@ class Solution {
     
     public void maxDepthUtil(TreeNode root, int height){
         if(root == null){
-            height = 0;
             return;
         }
         
