@@ -28,9 +28,7 @@ class Solution {
             
             for(int[] neighbour : adj.get(u)){
                 
-                int v = neighbour[0];
-                if(visited.contains(v)) continue;
-                
+                int v = neighbour[0];          
                 int wt = neighbour[1];
                 pq.offer(new int[]{v, cost + wt});
             }
